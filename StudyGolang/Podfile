@@ -1,0 +1,13 @@
+
+platform :ios, '8.0'
+
+# My other pods
+
+def study_golang
+
+    pod 'AFNetworking'
+end
+
+target 'StudyGolang' do
+    study_golang
+end
