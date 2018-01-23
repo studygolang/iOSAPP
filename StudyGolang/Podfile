@@ -5,7 +5,7 @@ platform :ios, '8.0'
 
 def study_golang
 
-    pod 'AFNetworking'
+    pod 'Masonry'
 end
 
 target 'StudyGolang' do
