@@ -7,202 +7,395 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8468DEE01FC45B79006A239E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8468DEDF1FC45B79006A239E /* Assets.xcassets */; };
-		8468DEE31FC45B79006A239E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8468DEE11FC45B79006A239E /* LaunchScreen.storyboard */; };
-		8468DEF61FC460CE006A239E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8468DEF31FC460CE006A239E /* AppDelegate.m */; };
-		8468DEF71FC460CE006A239E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8468DEF41FC460CE006A239E /* Info.plist */; };
-		8468DEF81FC460CE006A239E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8468DEF51FC460CE006A239E /* main.m */; };
-		8468DF011FC46226006A239E /* SGBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8468DF001FC46226006A239E /* SGBaseViewController.m */; };
-		8468DF041FC4623B006A239E /* SGBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8468DF031FC4623B006A239E /* SGBaseNavigationViewController.m */; };
-		8468DF101FC466F7006A239E /* SGHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8468DF0F1FC466F7006A239E /* SGHomeViewController.m */; };
-		8468DF131FC46AB7006A239E /* SGUrlConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8468DF121FC46AB7006A239E /* SGUrlConfig.m */; };
-		CE285DFBF8E53E2763C12B55 /* libPods-StudyGolang.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F793720079B6D2905707AC0 /* libPods-StudyGolang.a */; };
+		043D6E6E201087C3007CC1AC /* SGAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E6D201087C3007CC1AC /* SGAPI.swift */; };
+		043D6E7020108844007CC1AC /* SGTipsString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E6F20108844007CC1AC /* SGTipsString.swift */; };
+		043D6E8520108EC4007CC1AC /* SGTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E8020108EC4007CC1AC /* SGTabController.swift */; };
+		043D6E8620108EC4007CC1AC /* SGTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E8320108EC4007CC1AC /* SGTabbar.swift */; };
+		043D6E8720108EC4007CC1AC /* SGTabbarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E8420108EC4007CC1AC /* SGTabbarButton.swift */; };
+		043D6E892010A042007CC1AC /* SGConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E882010A042007CC1AC /* SGConstant.swift */; };
+		043D6E8E201188BD007CC1AC /* SGMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E8D201188BD007CC1AC /* SGMineController.swift */; };
+		043D6E9020118938007CC1AC /* SGHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E8F20118938007CC1AC /* SGHomeController.swift */; };
+		043D6E9220118B26007CC1AC /* SGSentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E9120118B26007CC1AC /* SGSentController.swift */; };
+		043D6E9420118B4D007CC1AC /* SGFeatureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E9320118B4D007CC1AC /* SGFeatureController.swift */; };
+		043D6E962011CBC5007CC1AC /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E952011CBC5007CC1AC /* UIColor+Extension.swift */; };
+		04C9EFF7200791B100C3FB9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9EFEF200791B100C3FB9E /* ViewController.swift */; };
+		04C9EFF8200791B100C3FB9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C9EFF0200791B100C3FB9E /* Assets.xcassets */; };
+		04C9EFF9200791B100C3FB9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C9EFF1200791B100C3FB9E /* LaunchScreen.storyboard */; };
+		04C9EFFA200791B100C3FB9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C9EFF3200791B100C3FB9E /* Main.storyboard */; };
+		04C9EFFB200791B100C3FB9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9EFF5200791B100C3FB9E /* AppDelegate.swift */; };
+		04C9F0042007924500C3FB9E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C9F0032007924500C3FB9E /* Info.plist */; };
+		04C9F01A2007950000C3FB9E /* SGBaseNavgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9F0182007950000C3FB9E /* SGBaseNavgationController.swift */; };
+		04C9F01B2007950000C3FB9E /* SGBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9F0192007950000C3FB9E /* SGBaseController.swift */; };
+		04C9F01E2007950B00C3FB9E /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9F01C2007950B00C3FB9E /* Tools.swift */; };
+		04C9F01F2007950B00C3FB9E /* YYNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9F01D2007950B00C3FB9E /* YYNetworkTool.swift */; };
+		04C9F0282007951900C3FB9E /* NSObject+ Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9F0202007951900C3FB9E /* NSObject+ Extension.swift */; };
+		04C9F0292007951900C3FB9E /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9F0212007951900C3FB9E /* UIImage+Extension.swift */; };
+		04C9F02A2007951900C3FB9E /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9F0222007951900C3FB9E /* UITextField+Extension.swift */; };
+		04C9F02B2007951900C3FB9E /* UIView+ Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9F0232007951900C3FB9E /* UIView+ Extension.swift */; };
+		04C9F02C2007951900C3FB9E /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9F0242007951900C3FB9E /* UserDefaults+Extension.swift */; };
+		04C9F02D2007951900C3FB9E /* NSString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9F0252007951900C3FB9E /* NSString+Extension.swift */; };
+		04C9F02E2007951900C3FB9E /* NSDate+ Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9F0262007951900C3FB9E /* NSDate+ Extension.swift */; };
+		04C9F02F2007951900C3FB9E /* UIButton+ Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9F0272007951900C3FB9E /* UIButton+ Extension.swift */; };
+		DE03D17734A6F556C5FBAA7C /* Pods_StudyGolang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7F89B7050FDCD718106762 /* Pods_StudyGolang.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1CB785E32DE1EE49C69A7998 /* Pods-StudyGolang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyGolang.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyGolang/Pods-StudyGolang.release.xcconfig"; sourceTree = "<group>"; };
-		49E796FE71C1EF2E74594D4B /* Pods-StudyGolang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyGolang.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudyGolang/Pods-StudyGolang.debug.xcconfig"; sourceTree = "<group>"; };
-		6F793720079B6D2905707AC0 /* libPods-StudyGolang.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StudyGolang.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8468DED31FC45B78006A239E /* StudyGolang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyGolang.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8468DEDF1FC45B79006A239E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8468DEE21FC45B79006A239E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8468DEF21FC460CE006A239E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8468DEF31FC460CE006A239E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8468DEF41FC460CE006A239E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8468DEF51FC460CE006A239E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8468DEFF1FC46226006A239E /* SGBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGBaseViewController.h; sourceTree = "<group>"; };
-		8468DF001FC46226006A239E /* SGBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGBaseViewController.m; sourceTree = "<group>"; };
-		8468DF021FC4623B006A239E /* SGBaseNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGBaseNavigationViewController.h; sourceTree = "<group>"; };
-		8468DF031FC4623B006A239E /* SGBaseNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGBaseNavigationViewController.m; sourceTree = "<group>"; };
-		8468DF0D1FC46556006A239E /* SGPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGPrefix.pch; sourceTree = "<group>"; };
-		8468DF0E1FC466F7006A239E /* SGHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHomeViewController.h; sourceTree = "<group>"; };
-		8468DF0F1FC466F7006A239E /* SGHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHomeViewController.m; sourceTree = "<group>"; };
-		8468DF111FC46AB7006A239E /* SGUrlConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGUrlConfig.h; sourceTree = "<group>"; };
-		8468DF121FC46AB7006A239E /* SGUrlConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGUrlConfig.m; sourceTree = "<group>"; };
+		043D6E6D201087C3007CC1AC /* SGAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGAPI.swift; sourceTree = "<group>"; };
+		043D6E6F20108844007CC1AC /* SGTipsString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGTipsString.swift; sourceTree = "<group>"; };
+		043D6E8020108EC4007CC1AC /* SGTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGTabController.swift; sourceTree = "<group>"; };
+		043D6E8320108EC4007CC1AC /* SGTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGTabbar.swift; sourceTree = "<group>"; };
+		043D6E8420108EC4007CC1AC /* SGTabbarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGTabbarButton.swift; sourceTree = "<group>"; };
+		043D6E882010A042007CC1AC /* SGConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGConstant.swift; sourceTree = "<group>"; };
+		043D6E8D201188BD007CC1AC /* SGMineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGMineController.swift; sourceTree = "<group>"; };
+		043D6E8F20118938007CC1AC /* SGHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGHomeController.swift; sourceTree = "<group>"; };
+		043D6E9120118B26007CC1AC /* SGSentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGSentController.swift; sourceTree = "<group>"; };
+		043D6E9320118B4D007CC1AC /* SGFeatureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGFeatureController.swift; sourceTree = "<group>"; };
+		043D6E952011CBC5007CC1AC /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		04C9EFCE200790C900C3FB9E /* StudyGolang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyGolang.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C9EFEF200791B100C3FB9E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04C9EFF0200791B100C3FB9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04C9EFF2200791B100C3FB9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04C9EFF4200791B100C3FB9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04C9EFF5200791B100C3FB9E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04C9F0032007924500C3FB9E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C9F0182007950000C3FB9E /* SGBaseNavgationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGBaseNavgationController.swift; sourceTree = "<group>"; };
+		04C9F0192007950000C3FB9E /* SGBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGBaseController.swift; sourceTree = "<group>"; };
+		04C9F01C2007950B00C3FB9E /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		04C9F01D2007950B00C3FB9E /* YYNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYNetworkTool.swift; sourceTree = "<group>"; };
+		04C9F0202007951900C3FB9E /* NSObject+ Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ Extension.swift"; sourceTree = "<group>"; };
+		04C9F0212007951900C3FB9E /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		04C9F0222007951900C3FB9E /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		04C9F0232007951900C3FB9E /* UIView+ Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ Extension.swift"; sourceTree = "<group>"; };
+		04C9F0242007951900C3FB9E /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		04C9F0252007951900C3FB9E /* NSString+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Extension.swift"; sourceTree = "<group>"; };
+		04C9F0262007951900C3FB9E /* NSDate+ Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+ Extension.swift"; sourceTree = "<group>"; };
+		04C9F0272007951900C3FB9E /* UIButton+ Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+ Extension.swift"; sourceTree = "<group>"; };
+		25A6233936E80F161AF69928 /* Pods-StudyGolang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyGolang.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudyGolang/Pods-StudyGolang.debug.xcconfig"; sourceTree = "<group>"; };
+		8C7F89B7050FDCD718106762 /* Pods_StudyGolang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyGolang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		937B01C1CB6E8919E584CB47 /* Pods-StudyGolang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyGolang.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyGolang/Pods-StudyGolang.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8468DED01FC45B78006A239E /* Frameworks */ = {
+		04C9EFCB200790C900C3FB9E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE285DFBF8E53E2763C12B55 /* libPods-StudyGolang.a in Frameworks */,
+				DE03D17734A6F556C5FBAA7C /* Pods_StudyGolang.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8468DECA1FC45B78006A239E = {
+		043D6E7120108EC4007CC1AC /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				8468DED51FC45B78006A239E /* StudyGolang */,
-				8468DED41FC45B78006A239E /* Products */,
-				AAFD06B2E970A3387787D44B /* Pods */,
-				FE107B933579ADA57D9CB81A /* Frameworks */,
+				043D6E8B20118865007CC1AC /* Controller */,
+				043D6E8A20118865007CC1AC /* Model */,
+				043D6E8C20118865007CC1AC /* View */,
 			);
+			path = Mine;
 			sourceTree = "<group>";
 		};
-		8468DED41FC45B78006A239E /* Products */ = {
+		043D6E7220108EC4007CC1AC /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				8468DED31FC45B78006A239E /* StudyGolang.app */,
+				043D6E7320108EC4007CC1AC /* Controller */,
+				043D6E7420108EC4007CC1AC /* Model */,
+				043D6E7520108EC4007CC1AC /* View */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		043D6E7320108EC4007CC1AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				043D6E9320118B4D007CC1AC /* SGFeatureController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		043D6E7420108EC4007CC1AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		043D6E7520108EC4007CC1AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		043D6E7620108EC4007CC1AC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				043D6E7720108EC4007CC1AC /* Controller */,
+				043D6E7820108EC4007CC1AC /* Model */,
+				043D6E7920108EC4007CC1AC /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		043D6E7720108EC4007CC1AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				043D6E8F20118938007CC1AC /* SGHomeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		043D6E7820108EC4007CC1AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		043D6E7920108EC4007CC1AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		043D6E7A20108EC4007CC1AC /* Send */ = {
+			isa = PBXGroup;
+			children = (
+				043D6E7B20108EC4007CC1AC /* Controller */,
+				043D6E7C20108EC4007CC1AC /* Model */,
+				043D6E7D20108EC4007CC1AC /* View */,
+			);
+			path = Send;
+			sourceTree = "<group>";
+		};
+		043D6E7B20108EC4007CC1AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				043D6E9120118B26007CC1AC /* SGSentController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		043D6E7C20108EC4007CC1AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		043D6E7D20108EC4007CC1AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		043D6E7E20108EC4007CC1AC /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				043D6E7F20108EC4007CC1AC /* Controller */,
+				043D6E8120108EC4007CC1AC /* Model */,
+				043D6E8220108EC4007CC1AC /* View */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		043D6E7F20108EC4007CC1AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				043D6E8020108EC4007CC1AC /* SGTabController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		043D6E8120108EC4007CC1AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		043D6E8220108EC4007CC1AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				043D6E8320108EC4007CC1AC /* SGTabbar.swift */,
+				043D6E8420108EC4007CC1AC /* SGTabbarButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		043D6E8A20118865007CC1AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		043D6E8B20118865007CC1AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				043D6E8D201188BD007CC1AC /* SGMineController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		043D6E8C20118865007CC1AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04C9EFC5200790C900C3FB9E = {
+			isa = PBXGroup;
+			children = (
+				04C9EFD0200790C900C3FB9E /* StudyGolang */,
+				04C9EFCF200790C900C3FB9E /* Products */,
+				7D10E6B63B3DC03AB6E40C2E /* Pods */,
+				0FCF68A341CF8B73DCD859A7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 0;
+		};
+		04C9EFCF200790C900C3FB9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04C9EFCE200790C900C3FB9E /* StudyGolang.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8468DED51FC45B78006A239E /* StudyGolang */ = {
+		04C9EFD0200790C900C3FB9E /* StudyGolang */ = {
 			isa = PBXGroup;
 			children = (
-				8468DEF41FC460CE006A239E /* Info.plist */,
-				8468DEDF1FC45B79006A239E /* Assets.xcassets */,
-				8468DEE11FC45B79006A239E /* LaunchScreen.storyboard */,
-				8468DEF11FC460CE006A239E /* Other */,
-				8468DEEC1FC4605E006A239E /* General */,
-				8468DEF01FC460CE006A239E /* Module */,
+				04C9EFE32007914A00C3FB9E /* Class */,
 			);
 			path = StudyGolang;
 			sourceTree = "<group>";
 		};
-		8468DEEC1FC4605E006A239E /* General */ = {
+		04C9EFE32007914A00C3FB9E /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				8468DEED1FC4605E006A239E /* Base */,
-				8468DEEE1FC4605E006A239E /* Category */,
-				8468DEEF1FC4605E006A239E /* Network */,
+				04C9EFEE200791B100C3FB9E /* Other */,
+				04C9EFE42007914A00C3FB9E /* Extension */,
+				04C9EFE82007914A00C3FB9E /* Lib */,
+				04C9EFE92007914A00C3FB9E /* Main */,
+				04C9EFEA2007914A00C3FB9E /* Base */,
+				04C9EFEB2007914A00C3FB9E /* Tool */,
 			);
-			path = General;
+			path = Class;
 			sourceTree = "<group>";
 		};
-		8468DEED1FC4605E006A239E /* Base */ = {
+		04C9EFE42007914A00C3FB9E /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				8468DEFF1FC46226006A239E /* SGBaseViewController.h */,
-				8468DF001FC46226006A239E /* SGBaseViewController.m */,
-				8468DF021FC4623B006A239E /* SGBaseNavigationViewController.h */,
-				8468DF031FC4623B006A239E /* SGBaseNavigationViewController.m */,
+				04C9F0262007951900C3FB9E /* NSDate+ Extension.swift */,
+				04C9F0202007951900C3FB9E /* NSObject+ Extension.swift */,
+				04C9F0252007951900C3FB9E /* NSString+Extension.swift */,
+				04C9F0272007951900C3FB9E /* UIButton+ Extension.swift */,
+				04C9F0212007951900C3FB9E /* UIImage+Extension.swift */,
+				04C9F0222007951900C3FB9E /* UITextField+Extension.swift */,
+				04C9F0232007951900C3FB9E /* UIView+ Extension.swift */,
+				04C9F0242007951900C3FB9E /* UserDefaults+Extension.swift */,
+				043D6E952011CBC5007CC1AC /* UIColor+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		04C9EFE82007914A00C3FB9E /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		04C9EFE92007914A00C3FB9E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				043D6E7220108EC4007CC1AC /* Features */,
+				043D6E7620108EC4007CC1AC /* Main */,
+				043D6E7120108EC4007CC1AC /* Mine */,
+				043D6E7A20108EC4007CC1AC /* Send */,
+				043D6E7E20108EC4007CC1AC /* Tab */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		04C9EFEA2007914A00C3FB9E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				04C9F0172007950000C3FB9E /* Controller */,
 			);
 			path = Base;
 			sourceTree = "<group>";
 		};
-		8468DEEE1FC4605E006A239E /* Category */ = {
+		04C9EFEB2007914A00C3FB9E /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				04C9F01C2007950B00C3FB9E /* Tools.swift */,
+				04C9F01D2007950B00C3FB9E /* YYNetworkTool.swift */,
 			);
-			path = Category;
+			path = Tool;
 			sourceTree = "<group>";
 		};
-		8468DEEF1FC4605E006A239E /* Network */ = {
+		04C9EFEE200791B100C3FB9E /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				8468DF111FC46AB7006A239E /* SGUrlConfig.h */,
-				8468DF121FC46AB7006A239E /* SGUrlConfig.m */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		8468DEF01FC460CE006A239E /* Module */ = {
-			isa = PBXGroup;
-			children = (
-				8468DF051FC46277006A239E /* MainTab */,
-			);
-			path = Module;
-			sourceTree = "<group>";
-		};
-		8468DEF11FC460CE006A239E /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				8468DF0D1FC46556006A239E /* SGPrefix.pch */,
-				8468DEF21FC460CE006A239E /* AppDelegate.h */,
-				8468DEF31FC460CE006A239E /* AppDelegate.m */,
-				8468DEF51FC460CE006A239E /* main.m */,
+				04C9F0032007924500C3FB9E /* Info.plist */,
+				04C9EFEF200791B100C3FB9E /* ViewController.swift */,
+				04C9EFF0200791B100C3FB9E /* Assets.xcassets */,
+				04C9EFF1200791B100C3FB9E /* LaunchScreen.storyboard */,
+				04C9EFF3200791B100C3FB9E /* Main.storyboard */,
+				04C9EFF5200791B100C3FB9E /* AppDelegate.swift */,
+				043D6E6D201087C3007CC1AC /* SGAPI.swift */,
+				043D6E6F20108844007CC1AC /* SGTipsString.swift */,
+				043D6E882010A042007CC1AC /* SGConstant.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
 		};
-		8468DF051FC46277006A239E /* MainTab */ = {
+		04C9F0172007950000C3FB9E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8468DF061FC46277006A239E /* Controllers */,
-				8468DF071FC46277006A239E /* Models */,
-				8468DF081FC46277006A239E /* Views */,
+				04C9F0182007950000C3FB9E /* SGBaseNavgationController.swift */,
+				04C9F0192007950000C3FB9E /* SGBaseController.swift */,
 			);
-			path = MainTab;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		8468DF061FC46277006A239E /* Controllers */ = {
+		0FCF68A341CF8B73DCD859A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8468DF0E1FC466F7006A239E /* SGHomeViewController.h */,
-				8468DF0F1FC466F7006A239E /* SGHomeViewController.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		8468DF071FC46277006A239E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		8468DF081FC46277006A239E /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		AAFD06B2E970A3387787D44B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				49E796FE71C1EF2E74594D4B /* Pods-StudyGolang.debug.xcconfig */,
-				1CB785E32DE1EE49C69A7998 /* Pods-StudyGolang.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		FE107B933579ADA57D9CB81A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6F793720079B6D2905707AC0 /* libPods-StudyGolang.a */,
+				8C7F89B7050FDCD718106762 /* Pods_StudyGolang.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D10E6B63B3DC03AB6E40C2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25A6233936E80F161AF69928 /* Pods-StudyGolang.debug.xcconfig */,
+				937B01C1CB6E8919E584CB47 /* Pods-StudyGolang.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8468DED21FC45B78006A239E /* StudyGolang */ = {
+		04C9EFCD200790C900C3FB9E /* StudyGolang */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8468DEE91FC45B79006A239E /* Build configuration list for PBXNativeTarget "StudyGolang" */;
+			buildConfigurationList = 04C9EFE0200790C900C3FB9E /* Build configuration list for PBXNativeTarget "StudyGolang" */;
 			buildPhases = (
-				3FA1E301D2D3FA51DD941801 /* [CP] Check Pods Manifest.lock */,
-				8468DECF1FC45B78006A239E /* Sources */,
-				8468DED01FC45B78006A239E /* Frameworks */,
-				8468DED11FC45B78006A239E /* Resources */,
-				6C25A38DA29871EC6D05B89A /* [CP] Embed Pods Frameworks */,
-				F8E49D5B37E9C8C9FD45602B /* [CP] Copy Pods Resources */,
+				846EC05CEBBFA784330236C2 /* [CP] Check Pods Manifest.lock */,
+				04C9EFCA200790C900C3FB9E /* Sources */,
+				04C9EFCB200790C900C3FB9E /* Frameworks */,
+				04C9EFCC200790C900C3FB9E /* Resources */,
+				0AD19F43466866D7D0D41E3D /* [CP] Embed Pods Frameworks */,
+				759AD56589987A7FBAAFF136 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,25 +403,27 @@
 			);
 			name = StudyGolang;
 			productName = StudyGolang;
-			productReference = 8468DED31FC45B78006A239E /* StudyGolang.app */;
+			productReference = 04C9EFCE200790C900C3FB9E /* StudyGolang.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8468DECB1FC45B78006A239E /* Project object */ = {
+		04C9EFC6200790C900C3FB9E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0910;
-				ORGANIZATIONNAME = admin;
+				CLASSPREFIX = SG;
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Mac;
 				TargetAttributes = {
-					8468DED21FC45B78006A239E = {
-						CreatedOnToolsVersion = 9.1;
+					04C9EFCD200790C900C3FB9E = {
+						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 8468DECE1FC45B78006A239E /* Build configuration list for PBXProject "StudyGolang" */;
+			buildConfigurationList = 04C9EFC9200790C900C3FB9E /* Build configuration list for PBXProject "StudyGolang" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -236,61 +431,86 @@
 				en,
 				Base,
 			);
-			mainGroup = 8468DECA1FC45B78006A239E;
-			productRefGroup = 8468DED41FC45B78006A239E /* Products */;
+			mainGroup = 04C9EFC5200790C900C3FB9E;
+			productRefGroup = 04C9EFCF200790C900C3FB9E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8468DED21FC45B78006A239E /* StudyGolang */,
+				04C9EFCD200790C900C3FB9E /* StudyGolang */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8468DED11FC45B78006A239E /* Resources */ = {
+		04C9EFCC200790C900C3FB9E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8468DEE31FC45B79006A239E /* LaunchScreen.storyboard in Resources */,
-				8468DEE01FC45B79006A239E /* Assets.xcassets in Resources */,
-				8468DEF71FC460CE006A239E /* Info.plist in Resources */,
+				04C9F0042007924500C3FB9E /* Info.plist in Resources */,
+				04C9EFFA200791B100C3FB9E /* Main.storyboard in Resources */,
+				04C9EFF8200791B100C3FB9E /* Assets.xcassets in Resources */,
+				04C9EFF9200791B100C3FB9E /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3FA1E301D2D3FA51DD941801 /* [CP] Check Pods Manifest.lock */ = {
+		0AD19F43466866D7D0D41E3D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		6C25A38DA29871EC6D05B89A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StudyGolang/Pods-StudyGolang-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/MarkdownView/MarkdownView.framework",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Popover/Popover.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftTheme/SwiftTheme.framework",
+				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTMorphingLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarkdownView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Popover.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftTheme.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StudyGolang/Pods-StudyGolang-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F8E49D5B37E9C8C9FD45602B /* [CP] Copy Pods Resources */ = {
+		759AD56589987A7FBAAFF136 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -305,37 +525,82 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StudyGolang/Pods-StudyGolang-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		846EC05CEBBFA784330236C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StudyGolang-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8468DECF1FC45B78006A239E /* Sources */ = {
+		04C9EFCA200790C900C3FB9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8468DF101FC466F7006A239E /* SGHomeViewController.m in Sources */,
-				8468DF011FC46226006A239E /* SGBaseViewController.m in Sources */,
-				8468DEF81FC460CE006A239E /* main.m in Sources */,
-				8468DF041FC4623B006A239E /* SGBaseNavigationViewController.m in Sources */,
-				8468DEF61FC460CE006A239E /* AppDelegate.m in Sources */,
-				8468DF131FC46AB7006A239E /* SGUrlConfig.m in Sources */,
+				043D6E8520108EC4007CC1AC /* SGTabController.swift in Sources */,
+				043D6E8E201188BD007CC1AC /* SGMineController.swift in Sources */,
+				043D6E9020118938007CC1AC /* SGHomeController.swift in Sources */,
+				043D6E8720108EC4007CC1AC /* SGTabbarButton.swift in Sources */,
+				04C9F02F2007951900C3FB9E /* UIButton+ Extension.swift in Sources */,
+				04C9F01A2007950000C3FB9E /* SGBaseNavgationController.swift in Sources */,
+				04C9EFFB200791B100C3FB9E /* AppDelegate.swift in Sources */,
+				04C9EFF7200791B100C3FB9E /* ViewController.swift in Sources */,
+				04C9F0282007951900C3FB9E /* NSObject+ Extension.swift in Sources */,
+				043D6E962011CBC5007CC1AC /* UIColor+Extension.swift in Sources */,
+				04C9F02D2007951900C3FB9E /* NSString+Extension.swift in Sources */,
+				04C9F02C2007951900C3FB9E /* UserDefaults+Extension.swift in Sources */,
+				04C9F02E2007951900C3FB9E /* NSDate+ Extension.swift in Sources */,
+				04C9F01B2007950000C3FB9E /* SGBaseController.swift in Sources */,
+				043D6E7020108844007CC1AC /* SGTipsString.swift in Sources */,
+				043D6E9420118B4D007CC1AC /* SGFeatureController.swift in Sources */,
+				04C9F01E2007950B00C3FB9E /* Tools.swift in Sources */,
+				04C9F02A2007951900C3FB9E /* UITextField+Extension.swift in Sources */,
+				043D6E9220118B26007CC1AC /* SGSentController.swift in Sources */,
+				043D6E8620108EC4007CC1AC /* SGTabbar.swift in Sources */,
+				043D6E892010A042007CC1AC /* SGConstant.swift in Sources */,
+				04C9F0292007951900C3FB9E /* UIImage+Extension.swift in Sources */,
+				04C9F02B2007951900C3FB9E /* UIView+ Extension.swift in Sources */,
+				043D6E6E201087C3007CC1AC /* SGAPI.swift in Sources */,
+				04C9F01F2007950B00C3FB9E /* YYNetworkTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8468DEE11FC45B79006A239E /* LaunchScreen.storyboard */ = {
+		04C9EFF1200791B100C3FB9E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8468DEE21FC45B79006A239E /* Base */,
+				04C9EFF2200791B100C3FB9E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		04C9EFF3200791B100C3FB9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04C9EFF4200791B100C3FB9E /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8468DEE71FC45B79006A239E /* Debug */ = {
+		04C9EFDE200790C900C3FB9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -383,14 +648,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		8468DEE81FC45B79006A239E /* Release */ = {
+		04C9EFDF200790C900C3FB9E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -432,43 +699,44 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		8468DEEA1FC45B79006A239E /* Debug */ = {
+		04C9EFE1200790C900C3FB9E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49E796FE71C1EF2E74594D4B /* Pods-StudyGolang.debug.xcconfig */;
+			baseConfigurationReference = 25A6233936E80F161AF69928 /* Pods-StudyGolang.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8T4UHZ99PF;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/StudyGolang/Other/SGPrefix.pch";
-				INFOPLIST_FILE = StudyGolang/Info.plist;
+				DEVELOPMENT_TEAM = 2WYMF679ST;
+				INFOPLIST_FILE = "$(SRCROOT)/StudyGolang/Class/Other/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.admin.StudyGolang;
+				PRODUCT_BUNDLE_IDENTIFIER = com.studygolang.StudyGolang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		8468DEEB1FC45B79006A239E /* Release */ = {
+		04C9EFE2200790C900C3FB9E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CB785E32DE1EE49C69A7998 /* Pods-StudyGolang.release.xcconfig */;
+			baseConfigurationReference = 937B01C1CB6E8919E584CB47 /* Pods-StudyGolang.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8T4UHZ99PF;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/StudyGolang/Other/SGPrefix.pch";
-				INFOPLIST_FILE = StudyGolang/Info.plist;
+				DEVELOPMENT_TEAM = 2WYMF679ST;
+				INFOPLIST_FILE = "$(SRCROOT)/StudyGolang/Class/Other/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.admin.StudyGolang;
+				PRODUCT_BUNDLE_IDENTIFIER = com.studygolang.StudyGolang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -476,25 +744,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8468DECE1FC45B78006A239E /* Build configuration list for PBXProject "StudyGolang" */ = {
+		04C9EFC9200790C900C3FB9E /* Build configuration list for PBXProject "StudyGolang" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8468DEE71FC45B79006A239E /* Debug */,
-				8468DEE81FC45B79006A239E /* Release */,
+				04C9EFDE200790C900C3FB9E /* Debug */,
+				04C9EFDF200790C900C3FB9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8468DEE91FC45B79006A239E /* Build configuration list for PBXNativeTarget "StudyGolang" */ = {
+		04C9EFE0200790C900C3FB9E /* Build configuration list for PBXNativeTarget "StudyGolang" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8468DEEA1FC45B79006A239E /* Debug */,
-				8468DEEB1FC45B79006A239E /* Release */,
+				04C9EFE1200790C900C3FB9E /* Debug */,
+				04C9EFE2200790C900C3FB9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8468DECB1FC45B78006A239E /* Project object */;
+	rootObject = 04C9EFC6200790C900C3FB9E /* Project object */;
 }

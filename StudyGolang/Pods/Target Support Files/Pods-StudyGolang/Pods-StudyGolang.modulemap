@@ -1,0 +1,6 @@
+framework module Pods_StudyGolang {
+  umbrella header "Pods-StudyGolang-umbrella.h"
+
+  export *
+  module * { export * }
+}
