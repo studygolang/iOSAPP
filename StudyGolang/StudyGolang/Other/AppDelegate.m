@@ -20,6 +20,9 @@
     self.window = [[UIWindow alloc] initWithFrame:SCREEN_RECT];
     [self.window makeKeyAndVisible];
     self.window.rootViewController = [[SGHomeViewController alloc] init];
+    
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
+    
     return YES;
 }
 

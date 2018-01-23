@@ -31,7 +31,14 @@
 //屏幕 rect
 #define SCREEN_RECT ([UIScreen mainScreen].bounds)
 
+//define this constant if you want to use Masonry without the 'mas_' prefix
+#define MAS_SHORTHAND
 
+//define this constant if you
+#define MAS_SHORTHAND_GLOBALS
+
+#import <Masonry/Masonry.h>
+#import "UIColor+SGColor.h"
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.

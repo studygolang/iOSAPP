@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		418A02CA2016CBF8004786A2 /* UIColor+SGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 418A02C82016CBF7004786A2 /* UIColor+SGColor.m */; };
 		8468DEE01FC45B79006A239E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8468DEDF1FC45B79006A239E /* Assets.xcassets */; };
 		8468DEE31FC45B79006A239E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8468DEE11FC45B79006A239E /* LaunchScreen.storyboard */; };
 		8468DEF61FC460CE006A239E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8468DEF31FC460CE006A239E /* AppDelegate.m */; };
@@ -21,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		1CB785E32DE1EE49C69A7998 /* Pods-StudyGolang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyGolang.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyGolang/Pods-StudyGolang.release.xcconfig"; sourceTree = "<group>"; };
+		418A02C82016CBF7004786A2 /* UIColor+SGColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SGColor.m"; sourceTree = "<group>"; };
+		418A02C92016CBF8004786A2 /* UIColor+SGColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SGColor.h"; sourceTree = "<group>"; };
 		49E796FE71C1EF2E74594D4B /* Pods-StudyGolang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyGolang.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudyGolang/Pods-StudyGolang.debug.xcconfig"; sourceTree = "<group>"; };
 		6F793720079B6D2905707AC0 /* libPods-StudyGolang.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StudyGolang.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8468DED31FC45B78006A239E /* StudyGolang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyGolang.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +56,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		418A02C52016C8E9004786A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		418A02C62016C8E9004786A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		418A02C72016CBEC004786A2 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				418A02C92016CBF8004786A2 /* UIColor+SGColor.h */,
+				418A02C82016CBF7004786A2 /* UIColor+SGColor.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		8468DECA1FC45B78006A239E = {
 			isa = PBXGroup;
 			children = (
@@ -87,8 +113,8 @@
 		8468DEEC1FC4605E006A239E /* General */ = {
 			isa = PBXGroup;
 			children = (
+				418A02C72016CBEC004786A2 /* Category */,
 				8468DEED1FC4605E006A239E /* Base */,
-				8468DEEE1FC4605E006A239E /* Category */,
 				8468DEEF1FC4605E006A239E /* Network */,
 			);
 			path = General;
@@ -103,13 +129,6 @@
 				8468DF031FC4623B006A239E /* SGBaseNavigationViewController.m */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		8468DEEE1FC4605E006A239E /* Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 		8468DEEF1FC4605E006A239E /* Network */ = {
@@ -144,8 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				8468DF061FC46277006A239E /* Controllers */,
-				8468DF071FC46277006A239E /* Models */,
-				8468DF081FC46277006A239E /* Views */,
+				418A02C62016C8E9004786A2 /* Models */,
+				418A02C52016C8E9004786A2 /* Views */,
 			);
 			path = MainTab;
 			sourceTree = "<group>";
@@ -157,20 +176,6 @@
 				8468DF0F1FC466F7006A239E /* SGHomeViewController.m */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		8468DF071FC46277006A239E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		8468DF081FC46277006A239E /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		AAFD06B2E970A3387787D44B /* Pods */ = {
@@ -272,7 +277,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		6C25A38DA29871EC6D05B89A /* [CP] Embed Pods Frameworks */ = {
@@ -312,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				418A02CA2016CBF8004786A2 /* UIColor+SGColor.m in Sources */,
 				8468DF101FC466F7006A239E /* SGHomeViewController.m in Sources */,
 				8468DF011FC46226006A239E /* SGBaseViewController.m in Sources */,
 				8468DEF81FC460CE006A239E /* main.m in Sources */,
@@ -449,6 +455,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/StudyGolang/Other/SGPrefix.pch";
 				INFOPLIST_FILE = StudyGolang/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.admin.StudyGolang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -466,6 +473,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/StudyGolang/Other/SGPrefix.pch";
 				INFOPLIST_FILE = StudyGolang/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.admin.StudyGolang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
