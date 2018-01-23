@@ -34,8 +34,7 @@ class SGBaseController: UIViewController {
     /// 设置导航栏标题
     ///
     /// - Parameter title: 标题
-    func setNavTitle(title:String)
-    {
+    func setNavTitle(title:String) {
         self.titleLabel.text = title
     }
 

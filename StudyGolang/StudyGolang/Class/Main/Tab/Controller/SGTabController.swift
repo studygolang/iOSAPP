@@ -10,33 +10,36 @@ import UIKit
 
 class SGTabController: UITabBarController {
 
-    var customTabbar: SGTabbar {
-        return SGTabbar(frame: CGRect.zero)
-    }
-    
-    
+    lazy var customTabbar: SGTabbar = {
+        var tab = SGTabbar.init(frame: self.tabBar.frame)
+        return tab
+    }()
+ 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        
-        
-        
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.white
-    
-
+        self.view.backgroundColor = UIColor.white        
+        let homeVC = SGHomeController.init()
+        setUpVC(vc: homeVC as SGBaseController, slcImgName: "home_select", norImgName: "home_nor", title: "首页")
+        let sendVC = SGSentController.init()
+        setUpVC(vc: sendVC as SGBaseController, slcImgName: "sent_select", norImgName: "sent_select", title: "发送")
+        let searchVC = SGFeatureController.init()
+        setUpVC(vc: searchVC as SGBaseController, slcImgName: "search_nor", norImgName: "search_select", title: "搜索")
+        let mineVC = SGMineController.init()
+        setUpVC(vc: mineVC as SGBaseController, slcImgName: "mine_nor", norImgName: "mine_select", title: "我的")
     }
     
-    func setUpVC(vc:SGTabController , slcImgName:String , norImgName:String , title:String)
-    {
+    func setUpVC(vc:SGBaseController , slcImgName:String , norImgName:String , title:String) {
         let slcImg = UIImage.init(named: slcImgName)
         let norImg = UIImage.init(named: norImgName)
         vc.tabBarItem.image = norImg
         vc.tabBarItem.selectedImage = slcImg
-        vc.title = title
+        vc.setNavTitle(title: title)
+        self.addChildViewController(vc)
+        self.customTabbar.addTabbarItem(item: vc.tabBarItem)
     }
     
     

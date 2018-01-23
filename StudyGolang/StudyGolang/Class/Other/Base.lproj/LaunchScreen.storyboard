@@ -22,30 +22,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lunch_icon" translatesAutoresizingMaskIntoConstraints="NO" id="968-MC-PQP">
-                                <rect key="frame" x="157" y="140" width="60" height="60"/>
+                                <rect key="frame" x="157.5" y="200" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="bZm-Y1-koq"/>
-                                    <constraint firstAttribute="height" constant="60" id="oJH-sP-Te0"/>
+                                    <constraint firstAttribute="width" constant="60" id="5cG-zJ-coT"/>
+                                    <constraint firstAttribute="height" constant="60" id="iQI-a4-uPd"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UV-rf-oPr">
-                                <rect key="frame" x="157" y="221" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Golang中文网" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UV-rf-oPr">
+                                <rect key="frame" x="139.5" y="285" width="95" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2sa-1e-WAz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="968-MC-PQP" firstAttribute="top" secondItem="kif-jK-NMU" secondAttribute="bottom" constant="120" id="iRP-Re-sUe"/>
-                            <constraint firstItem="968-MC-PQP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vuz-O1-Ce3"/>
+                            <constraint firstItem="0UV-rf-oPr" firstAttribute="top" secondItem="968-MC-PQP" secondAttribute="bottom" constant="25" id="C0O-K3-bXy"/>
+                            <constraint firstItem="0UV-rf-oPr" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Fc6-8w-mlL"/>
+                            <constraint firstItem="968-MC-PQP" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="200" id="eih-Ie-Si0"/>
+                            <constraint firstItem="968-MC-PQP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="kWC-mn-JOy"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
     <resources>

@@ -10,33 +10,28 @@ import UIKit
 
 class SGTabbarButton: UIButton {
 
-    var item: UITabBarItem {
-        get {
-            return UITabBarItem.init()
-        }
-        set {
-            self.item = newValue
+    var name:String? = ""
+    
+    var item: UITabBarItem = UITabBarItem.init() {
+        didSet {
             self.setTitle(self.item.title, for: UIControlState.normal)
             self.setImage(self.item.image, for: UIControlState.normal)
             self.setImage(self.item.selectedImage, for: UIControlState.selected)
         }
     }
     
-    convenience init() {
-        self.init()
-    }
-    
-    override init(frame: CGRect)
-    {
+    override init(frame: CGRect) {
         super.init(frame: frame)
+        self.name = "123"
         self.imageView?.contentMode = UIViewContentMode.center
         self.titleLabel?.textAlignment = NSTextAlignment.center
         self.titleLabel?.font = UIFont.systemFont(ofSize: 13.0)
-        self.setTitleColor(UIColor.gray, for: UIControlState.normal)
-        self.setTitleColor(UIColor.orange, for: UIControlState.selected)
+        self.setTitleColor(SGTextColor3, for: .normal)
+        self.setTitleColor(SGThemeColor, for: .selected)
     }
     
     required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
         fatalError("init(coder:) has not been implemented")
     }
     

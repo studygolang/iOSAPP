@@ -17,6 +17,7 @@
 		043D6E9020118938007CC1AC /* SGHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E8F20118938007CC1AC /* SGHomeController.swift */; };
 		043D6E9220118B26007CC1AC /* SGSentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E9120118B26007CC1AC /* SGSentController.swift */; };
 		043D6E9420118B4D007CC1AC /* SGFeatureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E9320118B4D007CC1AC /* SGFeatureController.swift */; };
+		043D6E962011CBC5007CC1AC /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E952011CBC5007CC1AC /* UIColor+Extension.swift */; };
 		04C9EFF7200791B100C3FB9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9EFEF200791B100C3FB9E /* ViewController.swift */; };
 		04C9EFF8200791B100C3FB9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C9EFF0200791B100C3FB9E /* Assets.xcassets */; };
 		04C9EFF9200791B100C3FB9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C9EFF1200791B100C3FB9E /* LaunchScreen.storyboard */; };
@@ -49,6 +50,7 @@
 		043D6E8F20118938007CC1AC /* SGHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGHomeController.swift; sourceTree = "<group>"; };
 		043D6E9120118B26007CC1AC /* SGSentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGSentController.swift; sourceTree = "<group>"; };
 		043D6E9320118B4D007CC1AC /* SGFeatureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGFeatureController.swift; sourceTree = "<group>"; };
+		043D6E952011CBC5007CC1AC /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		04C9EFCE200790C900C3FB9E /* StudyGolang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyGolang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C9EFEF200791B100C3FB9E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04C9EFF0200791B100C3FB9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 				04C9F0222007951900C3FB9E /* UITextField+Extension.swift */,
 				04C9F0232007951900C3FB9E /* UIView+ Extension.swift */,
 				04C9F0242007951900C3FB9E /* UserDefaults+Extension.swift */,
+				043D6E952011CBC5007CC1AC /* UIColor+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -556,6 +559,7 @@
 				04C9EFFB200791B100C3FB9E /* AppDelegate.swift in Sources */,
 				04C9EFF7200791B100C3FB9E /* ViewController.swift in Sources */,
 				04C9F0282007951900C3FB9E /* NSObject+ Extension.swift in Sources */,
+				043D6E962011CBC5007CC1AC /* UIColor+Extension.swift in Sources */,
 				04C9F02D2007951900C3FB9E /* NSString+Extension.swift in Sources */,
 				04C9F02C2007951900C3FB9E /* UserDefaults+Extension.swift in Sources */,
 				04C9F02E2007951900C3FB9E /* NSDate+ Extension.swift in Sources */,
