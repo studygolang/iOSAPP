@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwifterSwift
 
 class SGBaseNavgationController: UINavigationController {
     
@@ -16,16 +17,16 @@ class SGBaseNavgationController: UINavigationController {
     override init(rootViewController: UIViewController) {
         super.init(rootViewController: rootViewController)
     }
-    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    override func viewDidLoad() {
+     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationBar.isTranslucent = false
-        
-    }
+        self.navigationBar.backgroundColor = SGThemeColor
+        self.navigationBar.setBackgroundImage(UIImage.init(color: SGThemeColor, size: CGSize.init(width: kScreenWidth, height: 64))  , for: .default)
+        self.navigationBar.setColors(background: SGThemeColor, text: SGTextColor1)
+     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
