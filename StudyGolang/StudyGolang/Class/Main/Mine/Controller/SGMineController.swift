@@ -12,7 +12,7 @@ class SGMineController: SGBaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.white
+        self.view.backgroundColor = SGWhiteTheme
      }
 
     override func didReceiveMemoryWarning() {

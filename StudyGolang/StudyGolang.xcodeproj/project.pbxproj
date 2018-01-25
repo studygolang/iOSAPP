@@ -18,7 +18,6 @@
 		043D6E9220118B26007CC1AC /* SGSentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E9120118B26007CC1AC /* SGSentController.swift */; };
 		043D6E9420118B4D007CC1AC /* SGFeatureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E9320118B4D007CC1AC /* SGFeatureController.swift */; };
 		043D6E962011CBC5007CC1AC /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E952011CBC5007CC1AC /* UIColor+Extension.swift */; };
-		04C9EFF7200791B100C3FB9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9EFEF200791B100C3FB9E /* ViewController.swift */; };
 		04C9EFF8200791B100C3FB9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C9EFF0200791B100C3FB9E /* Assets.xcassets */; };
 		04C9EFF9200791B100C3FB9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C9EFF1200791B100C3FB9E /* LaunchScreen.storyboard */; };
 		04C9EFFA200791B100C3FB9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C9EFF3200791B100C3FB9E /* Main.storyboard */; };
@@ -52,7 +51,6 @@
 		043D6E9320118B4D007CC1AC /* SGFeatureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGFeatureController.swift; sourceTree = "<group>"; };
 		043D6E952011CBC5007CC1AC /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		04C9EFCE200790C900C3FB9E /* StudyGolang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyGolang.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		04C9EFEF200791B100C3FB9E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04C9EFF0200791B100C3FB9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C9EFF2200791B100C3FB9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04C9EFF4200791B100C3FB9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -345,7 +343,6 @@
 			isa = PBXGroup;
 			children = (
 				04C9F0032007924500C3FB9E /* Info.plist */,
-				04C9EFEF200791B100C3FB9E /* ViewController.swift */,
 				04C9EFF0200791B100C3FB9E /* Assets.xcassets */,
 				04C9EFF1200791B100C3FB9E /* LaunchScreen.storyboard */,
 				04C9EFF3200791B100C3FB9E /* Main.storyboard */,
@@ -557,7 +554,6 @@
 				04C9F02F2007951900C3FB9E /* UIButton+ Extension.swift in Sources */,
 				04C9F01A2007950000C3FB9E /* SGBaseNavgationController.swift in Sources */,
 				04C9EFFB200791B100C3FB9E /* AppDelegate.swift in Sources */,
-				04C9EFF7200791B100C3FB9E /* ViewController.swift in Sources */,
 				04C9F0282007951900C3FB9E /* NSObject+ Extension.swift in Sources */,
 				043D6E962011CBC5007CC1AC /* UIColor+Extension.swift in Sources */,
 				04C9F02D2007951900C3FB9E /* NSString+Extension.swift in Sources */,
@@ -715,7 +711,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WYMF679ST;
 				INFOPLIST_FILE = "$(SRCROOT)/StudyGolang/Class/Other/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.studygolang.StudyGolang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -732,7 +728,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WYMF679ST;
 				INFOPLIST_FILE = "$(SRCROOT)/StudyGolang/Class/Other/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.studygolang.StudyGolang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
