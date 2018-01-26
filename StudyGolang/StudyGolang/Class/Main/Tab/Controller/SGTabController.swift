@@ -14,7 +14,6 @@ class SGTabController: UITabBarController,SGTabbarProtocol {
         tab.delegate = self
         return tab
     }()
- 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
@@ -37,7 +36,9 @@ class SGTabController: UITabBarController,SGTabbarProtocol {
         vc.tabBarItem.image = norImg
         vc.tabBarItem.selectedImage = slcImg
         vc.tabBarItem.title = title
-        vc.setNavTitle(title: title)
+        if title != "首页" {
+            vc.setNavTitle(title: title)
+        }
         let nav = SGBaseNavgationController.init(rootViewController: vc)
          self.addChildViewController(nav)
         self.customTabbar.addTabbarItem(item: vc.tabBarItem)
