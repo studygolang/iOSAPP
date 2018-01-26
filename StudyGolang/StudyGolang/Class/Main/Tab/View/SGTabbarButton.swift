@@ -32,16 +32,16 @@ class SGTabbarButton: UIButton {
     }
      override func imageRect(forContentRect contentRect: CGRect) -> CGRect {
         if self.tag - 1212 == 1 {
-            return CGRect.init(x: (self.width - 27) * 0.5, y: (self.height - 27) * 0.5, width: 27, height: 27)
+            return CGRect.init(x: (self.width - 27) * 0.5, y: 5 + 3, width: 27, height: 27)
         } else {
             return CGRect.init(x: (self.width - 20) * 0.5, y: 5, width: 20, height: 20)
         }
     }
      override func titleRect(forContentRect contentRect: CGRect) -> CGRect {
-        if self.tag - 1212 == 1 {
-            return CGRect.init(x: 0, y: self.height * 0.65, width: self.width, height:0)
+         if self.tag - 1212 == 1 {
+            return CGRect.init(x: 0, y: 0, width: self.width, height:0)
          } else {
-            return CGRect.init(x: 0, y: self.height * 0.6, width: self.width, height: self.height * 0.35)
+            return CGRect.init(x: 0, y: (self.imageView?.frame.maxY)! + 2.0, width: self.width, height: self.height * 0.35)
          }
     }
  }
