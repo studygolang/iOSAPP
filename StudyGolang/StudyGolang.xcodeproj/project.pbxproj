@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04020847202056130030A8F8 /* SGMainThemeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04020846202056130030A8F8 /* SGMainThemeController.swift */; };
+		04020849202056430030A8F8 /* SGOtherThemeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04020848202056430030A8F8 /* SGOtherThemeController.swift */; };
 		043D6E6E201087C3007CC1AC /* SGAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E6D201087C3007CC1AC /* SGAPI.swift */; };
 		043D6E7020108844007CC1AC /* SGTipsString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E6F20108844007CC1AC /* SGTipsString.swift */; };
 		043D6E8520108EC4007CC1AC /* SGTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E8020108EC4007CC1AC /* SGTabController.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04020846202056130030A8F8 /* SGMainThemeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGMainThemeController.swift; sourceTree = "<group>"; };
+		04020848202056430030A8F8 /* SGOtherThemeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGOtherThemeController.swift; sourceTree = "<group>"; };
 		043D6E6D201087C3007CC1AC /* SGAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGAPI.swift; sourceTree = "<group>"; };
 		043D6E6F20108844007CC1AC /* SGTipsString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGTipsString.swift; sourceTree = "<group>"; };
 		043D6E8020108EC4007CC1AC /* SGTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGTabController.swift; sourceTree = "<group>"; };
@@ -141,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				043D6E8F20118938007CC1AC /* SGHomeController.swift */,
+				04020846202056130030A8F8 /* SGMainThemeController.swift */,
+				04020848202056430030A8F8 /* SGOtherThemeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -561,11 +567,13 @@
 				04C9F02E2007951900C3FB9E /* NSDate+ Extension.swift in Sources */,
 				04C9F01B2007950000C3FB9E /* SGBaseController.swift in Sources */,
 				043D6E7020108844007CC1AC /* SGTipsString.swift in Sources */,
+				04020849202056430030A8F8 /* SGOtherThemeController.swift in Sources */,
 				043D6E9420118B4D007CC1AC /* SGFeatureController.swift in Sources */,
 				04C9F01E2007950B00C3FB9E /* Tools.swift in Sources */,
 				04C9F02A2007951900C3FB9E /* UITextField+Extension.swift in Sources */,
 				043D6E9220118B26007CC1AC /* SGSentController.swift in Sources */,
 				043D6E8620108EC4007CC1AC /* SGTabbar.swift in Sources */,
+				04020847202056130030A8F8 /* SGMainThemeController.swift in Sources */,
 				043D6E892010A042007CC1AC /* SGConstant.swift in Sources */,
 				04C9F0292007951900C3FB9E /* UIImage+Extension.swift in Sources */,
 				04C9F02B2007951900C3FB9E /* UIView+ Extension.swift in Sources */,
