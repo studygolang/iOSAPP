@@ -44,6 +44,17 @@ class SGTabController: UITabBarController,SGTabbarProtocol {
         self.customTabbar.addTabbarItem(item: vc.tabBarItem)
     }
     
+    public static func GetTabbarHei()->Float {
+        var tabHei:Float = 49.0
+        let inch = IphoneType.getDeviceInch()
+        if inch == IphoneType.inch_57 {
+            tabHei = 83.0
+        } else {
+            tabHei = 49.0
+        }
+        return tabHei
+    }
+    
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
          for vi in self.tabBar.subviews {
@@ -58,8 +69,7 @@ class SGTabController: UITabBarController,SGTabbarProtocol {
     }
     
     func didSelectidx(tabbar:SGTabbar?,index:Int) {
-        print(index)
-        self.selectedIndex = index
+         self.selectedIndex = index
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
