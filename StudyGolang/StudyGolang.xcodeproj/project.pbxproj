@@ -20,6 +20,8 @@
 		043D6E9220118B26007CC1AC /* SGSentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E9120118B26007CC1AC /* SGSentController.swift */; };
 		043D6E9420118B4D007CC1AC /* SGFeatureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E9320118B4D007CC1AC /* SGFeatureController.swift */; };
 		043D6E962011CBC5007CC1AC /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D6E952011CBC5007CC1AC /* UIColor+Extension.swift */; };
+		045762A520245D84003A52E3 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045762A420245D83003A52E3 /* Logger.swift */; };
+		04827B192023001E00013A88 /* SGMainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04827B182023001E00013A88 /* SGMainModel.swift */; };
 		04C9EFF8200791B100C3FB9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C9EFF0200791B100C3FB9E /* Assets.xcassets */; };
 		04C9EFF9200791B100C3FB9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C9EFF1200791B100C3FB9E /* LaunchScreen.storyboard */; };
 		04C9EFFA200791B100C3FB9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C9EFF3200791B100C3FB9E /* Main.storyboard */; };
@@ -54,6 +56,8 @@
 		043D6E9120118B26007CC1AC /* SGSentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGSentController.swift; sourceTree = "<group>"; };
 		043D6E9320118B4D007CC1AC /* SGFeatureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGFeatureController.swift; sourceTree = "<group>"; };
 		043D6E952011CBC5007CC1AC /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		045762A420245D83003A52E3 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		04827B182023001E00013A88 /* SGMainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGMainModel.swift; sourceTree = "<group>"; };
 		04C9EFCE200790C900C3FB9E /* StudyGolang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyGolang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C9EFF0200791B100C3FB9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C9EFF2200791B100C3FB9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 		043D6E7820108EC4007CC1AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04827B182023001E00013A88 /* SGMainModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -339,6 +344,7 @@
 		04C9EFEB2007914A00C3FB9E /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				045762A420245D83003A52E3 /* Logger.swift */,
 				04C9F01C2007950B00C3FB9E /* Tools.swift */,
 				04C9F01D2007950B00C3FB9E /* YYNetworkTool.swift */,
 			);
@@ -554,6 +560,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				043D6E8520108EC4007CC1AC /* SGTabController.swift in Sources */,
+				04827B192023001E00013A88 /* SGMainModel.swift in Sources */,
 				043D6E8E201188BD007CC1AC /* SGMineController.swift in Sources */,
 				043D6E9020118938007CC1AC /* SGHomeController.swift in Sources */,
 				043D6E8720108EC4007CC1AC /* SGTabbarButton.swift in Sources */,
@@ -563,6 +570,7 @@
 				04C9F0282007951900C3FB9E /* NSObject+ Extension.swift in Sources */,
 				043D6E962011CBC5007CC1AC /* UIColor+Extension.swift in Sources */,
 				04C9F02D2007951900C3FB9E /* NSString+Extension.swift in Sources */,
+				045762A520245D84003A52E3 /* Logger.swift in Sources */,
 				04C9F02C2007951900C3FB9E /* UserDefaults+Extension.swift in Sources */,
 				04C9F02E2007951900C3FB9E /* NSDate+ Extension.swift in Sources */,
 				04C9F01B2007950000C3FB9E /* SGBaseController.swift in Sources */,
