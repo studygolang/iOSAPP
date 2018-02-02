@@ -27,6 +27,14 @@ public   let SGTextColor3 = UIColor.init(hex: 0x999999)
 public   let kScreenWidth = UIScreen.main.bounds.size.width
 public   let kScreenHeight = UIScreen.main.bounds.size.height
 
-
+//封装的日志输出功能（T表示不指定日志信息参数类型）
+public func MyLog<T>(_ message:T, file:String = #file, function:String = #function,line:Int = #line) {
+    #if DEBUG
+        //获取文件名
+        let fileName = (file as NSString).lastPathComponent
+        //打印日志内容
+        print("\(fileName) --- \(line) ---- (function)  ---- \(message)")
+    #endif
+}
 
  

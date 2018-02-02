@@ -31,8 +31,5 @@ public extension UIButton {
             self.addTarget(self, action: #selector(self.extension_UIButton(sender:)), for: UIControlEvents.touchUpInside)
         }
     }
-    
-   
-    
 }
 
